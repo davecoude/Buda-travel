@@ -20,5 +20,409 @@
 
     <title>Buda Travel</title>
   </head>
-  <body></body>
+  <body>
+    <!-- navbar desktop -->
+    <nav
+      class="fixed z-10 hidden h-[50px] w-screen justify-evenly bg-violet-700 pt-2 text-white shadow-md shadow-violet-600/25 lg:block"
+    >
+      <!-- logo -->
+      <div class="flex flex-row items-center justify-around">
+        <div>
+          <h1 class="text-3xl font-bold">Buda Travel</h1>
+        </div>
+
+        <!-- lista menu -->
+        <ul class="flex space-x-6 text-base font-medium">
+          <li class="hover:text-violet-200">
+            <a href="#recomendados">Recomendados</a>
+          </li>
+          <li class="hover:text-violet-200">
+            <a href="#destacados">Destacados</a>
+          </li>
+          <li class="hover:text-violet-200"><a href="#preguntas">FAQs</a></li>
+          <li class="hover:text-violet-200"><a href="#acerca">Acerca de</a></li>
+        </ul>
+
+        <!-- dark mode icon -->
+        <div>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- welcome screen -->
+    <div class="h-screen w-full bg-LA bg-cover lg:h-[800px]">
+      <div
+        class="to h-screen w-full bg-neutral-900/50 bg-gradient-to-t from-neutral-500/5 lg:h-[800px]"
+      >
+        <h1
+          class="mx-auto w-11/12 pt-40 text-center font-syne text-4xl text-neutral-50 lg:mx-24 lg:text-left"
+        >
+          Let's start the Adventure!
+        </h1>
+
+        <div
+          class="mx-auto mt-16 flex h-10 w-10/12 rounded-full bg-neutral-50 lg:mx-24 lg:w-3/12"
+        >
+          <svg
+            class="ml-2 w-6 text-gray-400"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <input
+            class="ml-2 w-4/5 bg-neutral-50 text-base font-medium"
+            type="text"
+            placeholder="Search anyplace"
+          />
+        </div>
+
+        <div
+          class="mt-80 flex w-full flex-col items-center justify-center lg:hidden"
+        >
+          <svg
+            class="w-7 text-neutral-50"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <p class="text-center text-base font-medium text-neutral-50">
+            Swipe up
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- cards -->
+    <div id="recomendados">
+      <h2 class="mt-16 pl-4 text-left text-2xl font-bold text-neutral-900">
+        Recomendados
+      </h2>
+    </div>
+
+    <!-- scroll -->
+    <div
+      class="flex h-64 w-full snap-mandatory flex-row items-center space-x-4 overflow-x-auto overscroll-x-contain p-4 scrollbar-hide lg:justify-center"
+    >
+      <div
+        class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg lg:hover:bg-violet-600 lg:hover:text-white"
+      >
+        <img
+          src="./img/LA.jpg"
+          alt="los angeles"
+          class="h-2/4 w-full overflow-hidden rounded bg-cover"
+        />
+        <h3 class="pl-4 pt-2 font-inter text-base font-bold">Los Angeles</h3>
+        <p class="mr-2 pl-4 pt-2 font-inter text-xs">
+          Los Ángeles se encuentra en el sur de California.
+        </p>
+      </div>
+
+      <div
+        class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg lg:hover:bg-violet-600 lg:hover:text-white"
+      >
+        <img
+          src="./img/bali.jpg"
+          alt="los angeles"
+          class="h-2/4 w-full overflow-hidden rounded bg-cover shadow-sm"
+        />
+        <h3 class="pl-4 pt-2 font-inter text-base font-bold">Bali</h3>
+        <p class="mr-2 pl-4 pt-2 font-inter text-xs">
+          Bali es una hermosa isla tropical perfecta para los amantes de la
+          playa.
+        </p>
+      </div>
+
+      <div
+        class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg lg:hover:bg-violet-600 lg:hover:text-white"
+      >
+        <img
+          src=" ./img/chicago.jpg"
+          alt="los angeles"
+          class="h-2/4 w-full overflow-hidden rounded bg-cover shadow-sm"
+        />
+        <h3 class="pl-4 pt-2 font-inter text-base font-bold">Chicago</h3>
+        <p class="mr-2 pl-4 pt-2 font-inter text-xs">
+          Chicago es una ciudad del Medio Oeste de USA al sur del lago Michigan.
+        </p>
+      </div>
+
+      <div
+        class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg lg:hover:bg-violet-600 lg:hover:text-white"
+      >
+        <img
+          src="./img/europe.jpg"
+          alt="los angeles"
+          class="h-2/4 w-full overflow-hidden rounded bg-cover shadow-sm"
+        />
+        <h3 class="pl-4 pt-2 font-inter text-base font-bold">Europa</h3>
+        <p class="mr-2 pl-4 pt-2 font-inter text-xs">
+          El continente europeo contiene muchos países diversos.
+        </p>
+      </div>
+
+      <div
+        class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg lg:hover:bg-violet-600 lg:hover:text-white"
+      >
+        <img
+          src="./img/iceland.jpg"
+          alt="los angeles"
+          class="h-2/4 w-full overflow-hidden rounded bg-cover shadow-sm"
+        />
+        <h3 class="pl-4 pt-2 font-inter text-base font-bold">Islandia</h3>
+        <p class="mr-2 pl-4 pt-2 font-inter text-xs">
+          Islandia es una tierra espectacular de montañas escarpadas.
+        </p>
+      </div>
+
+      <div
+        class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg lg:hover:bg-violet-600 lg:hover:text-white"
+      >
+        <img
+          src="./img/miami.jpg"
+          alt="los angeles"
+          class="h-2/4 w-full overflow-hidden rounded bg-cover shadow-sm"
+        />
+        <h3 class="pl-4 pt-2 font-inter text-base font-bold">Miami</h3>
+        <p class="mr-2 pl-4 pt-2 font-inter text-xs">
+          Miami es una ciudad turística costera con kilómetros de playas.
+        </p>
+      </div>
+    </div>
+
+    <!-- destacados -->
+    <div id="destacados" class="h-auto w-full p-4">
+      <div>
+        <h2
+          class="mt-16 mb-6 pl-4 text-left text-2xl font-bold text-neutral-900"
+        >
+          Rentas destacadas
+        </h2>
+      </div>
+
+      <div class="grid grid-rows-4 gap-4 lg:grid-cols-3 lg:grid-rows-2">
+        <div
+          class="h-[300px] overflow-hidden rounded-lg bg-newYork bg-cover lg:col-span-2"
+        >
+          <div
+            class="flex h-full w-full flex-col justify-end bg-gray-900/60 bg-fixed p-4 text-center text-white"
+          >
+            <h3 class="text-xl font-bold">Nueva York</h3>
+            <p class="text-base font-medium">
+              Nueva York es un destino de ensueño. Venga a la capital donde los
+              sueños se hacen realidad.
+            </p>
+          </div>
+        </div>
+
+        <div class="h-[300px] overflow-hidden rounded-lg bg-iceland bg-cover">
+          <div
+            class="flex h-full w-full flex-col justify-end bg-gray-900/60 bg-fixed p-4 text-center text-white"
+          >
+            <h3 class="text-xl font-bold">Islandia</h3>
+            <p class="text-base font-medium">
+              Visite nuestra isla y pruebe la comida por la que somos famosos,
+              vaya a Islandia y diviértase con el sinfín de actividades
+              disponibles.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="h-[300px] overflow-hidden rounded-lg bg-switzerland bg-cover"
+        >
+          <div
+            class="flex h-full w-full flex-col justify-end bg-gray-900/60 bg-fixed p-4 text-center text-white"
+          >
+            <h3 class="text-xl font-bold">Suiza</h3>
+            <p class="text-base font-medium">
+              Descubra los increíbles paisajes, la rica historia y la vibrante
+              cultura de Suiza.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="h-[300px] overflow-hidden rounded-lg bg-europe bg-cover lg:col-span-2"
+        >
+          <div
+            class="flex h-full w-full flex-col justify-end bg-gray-900/60 bg-fixed p-4 text-center text-white"
+          >
+            <h3 class="text-xl font-bold">Europa</h3>
+            <p class="text-base font-medium">
+              Viaje a Europa, conozca lugares entre otros. Recorrerás Francia y
+              Barcelona, visitarás Praga y Budapest, pasarás una noche en París
+              y un día en Zúrich.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ's -->
+    <div id="preguntas" class="mt-16 flex h-auto w-full flex-col space-y-4 p-4">
+      <h2 class="mb-6 flex items-center text-2xl font-bold">
+        Preguntas frecuentes
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="ml-2 h-6 w-6 text-gray-300"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </h2>
+
+      <div class="mb-10 h-auto w-full">
+        <h4 class="mb-2 text-lg font-bold">Política de Cancelación</h4>
+        <p class="mb-6 font-medium text-slate-400">
+          Para estancias menores a una semana es importante avisar con 3 días de
+          anticipación, de caso contario será sancionado.
+        </p>
+      </div>
+
+      <div class="h-auto w-full">
+        <h4 class="mb-2 text-lg font-bold">Métodos de pago</h4>
+        <p class="mb-6 font-medium text-slate-400">
+          Aceptamos distintos métodos de pago: VISA, MasterCard, American
+          Express, Paypal y Binance.
+        </p>
+      </div>
+
+      <div class="h-auto w-full">
+        <h4 class="mb-2 text-lg font-bold">Mascotas</h4>
+        <p class="mb-6 font-medium text-slate-400">
+          El tema de las mascotas dependerá directamente del anfitrión.
+        </p>
+      </div>
+
+      <div class="h-auto w-full">
+        <h4 class="mb-2 text-lg font-bold">Información de Seguridad</h4>
+        <p class="mb-6 font-medium text-slate-400">
+          Todas nuestras estancias cuentan con seguro en caso de accidentes.
+        </p>
+      </div>
+
+      <div class="h-auto w-full">
+        <h4 class="mb-2 text-lg font-bold">Estancias Largas</h4>
+        <p class="mb-6 font-medium text-slate-400">
+          Contamos con estancias de hasta 3 meses, en este caso es requerido un
+          anticipo con un monto del 50% del valor de la renta.
+        </p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="acerca" class="h-[200px] w-full bg-violet-600 p-4 text-white">
+      <h3 class="mb-5 text-left text-xl font-bold">Acerca de</h3>
+      <ul class="flex flex-row flex-wrap space-x-3">
+        <li class="text-faq">Inversionistas</li>
+        <li class="text-faq">Empleos</li>
+        <li class="text-faq">Términos y Condiciones</li>
+        <li class="text-faq">Financiación</li>
+        <li class="text-faq">Alianzas</li>
+      </ul>
+    </footer>
+
+    <!-- TabBAr 4(home, search, heart, user-profile) -->
+    <nav class="fixed bottom-0 h-[60px] w-full bg-slate-900 lg:hidden">
+      <ul class="flex flex-row items-center justify-evenly pt-3">
+        <li class="flex flex-col items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-6 w-6 text-white"
+          >
+            <path
+              d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"
+            />
+            <path
+              d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
+            />
+          </svg>
+          <a href="" class="text-white">Home</a>
+        </li>
+
+        <li class="flex flex-col items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-6 w-6 text-white"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M17.303 5.197A7.5 7.5 0 006.697 15.803a.75.75 0 01-1.061 1.061A9 9 0 1121 10.5a.75.75 0 01-1.5 0c0-1.92-.732-3.839-2.197-5.303zm-2.121 2.121a4.5 4.5 0 00-6.364 6.364.75.75 0 11-1.06 1.06A6 6 0 1118 10.5a.75.75 0 01-1.5 0c0-1.153-.44-2.303-1.318-3.182zm-3.634 1.314a.75.75 0 01.82.311l5.228 7.917a.75.75 0 01-.777 1.148l-2.097-.43 1.045 3.9a.75.75 0 01-1.45.388l-1.044-3.899-1.601 1.42a.75.75 0 01-1.247-.606l.569-9.47a.75.75 0 01.554-.68z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <a href="" class="text-white">Recomendados</a>
+        </li>
+
+        <li class="flex flex-col items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-6 w-6 text-white"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8.161 2.58a1.875 1.875 0 011.678 0l4.993 2.498c.106.052.23.052.336 0l3.869-1.935A1.875 1.875 0 0121.75 4.82v12.485c0 .71-.401 1.36-1.037 1.677l-4.875 2.437a1.875 1.875 0 01-1.676 0l-4.994-2.497a.375.375 0 00-.336 0l-3.868 1.935A1.875 1.875 0 012.25 19.18V6.695c0-.71.401-1.36 1.036-1.677l4.875-2.437zM9 6a.75.75 0 01.75.75V15a.75.75 0 01-1.5 0V6.75A.75.75 0 019 6zm6.75 3a.75.75 0 00-1.5 0v8.25a.75.75 0 001.5 0V9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <a href="" class="text-white">Destacados</a>
+        </li>
+
+        <li class="flex flex-col items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-6 w-6 text-white"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <a href="" class="text-white">Perfil</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
 </html>

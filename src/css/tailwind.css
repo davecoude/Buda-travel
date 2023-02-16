@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card {
+    @apply h-52 w-44 flex-none rounded bg-slate-50;
+  }
+
+  .text-faq {
+    @apply text-base font-medium leading-5 text-gray-900;
+  }
+}

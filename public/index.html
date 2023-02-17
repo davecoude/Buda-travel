@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="htmlDark" class="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,10 +20,10 @@
 
     <title>Buda Travel</title>
   </head>
-  <body>
+  <body class="dark:bg-slate-800">
     <!-- navbar desktop -->
     <nav
-      class="fixed z-10 hidden h-[50px] w-screen justify-evenly bg-violet-700 pt-2 text-white shadow-md shadow-violet-600/25 lg:block"
+      class="fixed z-10 hidden h-[50px] w-screen justify-evenly bg-slate-900 pt-2 text-white shadow-md shadow-slate-600/25 lg:block"
     >
       <!-- logo -->
       <div class="flex flex-row items-center justify-around">
@@ -44,22 +44,19 @@
         </ul>
 
         <!-- dark mode icon -->
-        <div>
-          <a href="">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="h-6 w-6"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a>
-        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="h-6 w-6"
+          id="iconDarkMode"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+            clip-rule="evenodd"
+          />
+        </svg>
       </div>
     </nav>
 
@@ -122,7 +119,9 @@
 
     <!-- cards -->
     <div id="recomendados">
-      <h2 class="mt-16 pl-4 text-left text-2xl font-bold text-neutral-900">
+      <h2
+        class="mt-16 pl-4 text-left text-2xl font-bold text-neutral-900 dark:text-white"
+      >
         Recomendados
       </h2>
     </div>
@@ -132,7 +131,7 @@
       class="flex h-64 w-full snap-mandatory flex-row items-center space-x-4 overflow-x-auto overscroll-x-contain p-4 scrollbar-hide lg:justify-center"
     >
       <div
-        class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg lg:hover:bg-violet-600 lg:hover:text-white"
+        class="card shadow-gray-500/15 lg:dark:hover:bg-viole text-neutral-900 drop-shadow-lg"
       >
         <img
           src="./img/LA.jpg"
@@ -145,9 +144,7 @@
         </p>
       </div>
 
-      <div
-        class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg lg:hover:bg-violet-600 lg:hover:text-white"
-      >
+      <div class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg">
         <img
           src="./img/bali.jpg"
           alt="los angeles"
@@ -160,9 +157,7 @@
         </p>
       </div>
 
-      <div
-        class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg lg:hover:bg-violet-600 lg:hover:text-white"
-      >
+      <div class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg">
         <img
           src=" ./img/chicago.jpg"
           alt="los angeles"
@@ -174,9 +169,7 @@
         </p>
       </div>
 
-      <div
-        class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg lg:hover:bg-violet-600 lg:hover:text-white"
-      >
+      <div class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg">
         <img
           src="./img/europe.jpg"
           alt="los angeles"
@@ -188,9 +181,7 @@
         </p>
       </div>
 
-      <div
-        class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg lg:hover:bg-violet-600 lg:hover:text-white"
-      >
+      <div class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg">
         <img
           src="./img/iceland.jpg"
           alt="los angeles"
@@ -202,9 +193,7 @@
         </p>
       </div>
 
-      <div
-        class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg lg:hover:bg-violet-600 lg:hover:text-white"
-      >
+      <div class="card shadow-gray-500/15 text-neutral-900 drop-shadow-lg">
         <img
           src="./img/miami.jpg"
           alt="los angeles"
@@ -221,7 +210,7 @@
     <div id="destacados" class="h-auto w-full p-4">
       <div>
         <h2
-          class="mt-16 mb-6 pl-4 text-left text-2xl font-bold text-neutral-900"
+          class="mt-16 mb-6 pl-4 text-left text-2xl font-bold text-neutral-900 dark:text-white"
         >
           Rentas destacadas
         </h2>
@@ -287,14 +276,17 @@
     </div>
 
     <!-- FAQ's -->
-    <div id="preguntas" class="mt-16 flex h-auto w-full flex-col space-y-4 p-4">
+    <div
+      id="preguntas"
+      class="mt-16 flex h-auto w-full flex-col space-y-4 p-4 dark:text-white"
+    >
       <h2 class="mb-6 flex items-center text-2xl font-bold">
         Preguntas frecuentes
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          class="ml-2 h-6 w-6 text-gray-300"
+          class="ml-2 h-6 w-6 text-white"
         >
           <path
             fill-rule="evenodd"
@@ -306,7 +298,7 @@
 
       <div class="mb-10 h-auto w-full">
         <h4 class="mb-2 text-lg font-bold">Política de Cancelación</h4>
-        <p class="mb-6 font-medium text-slate-400">
+        <p class="mb-6 font-medium text-slate-400 dark:text-white">
           Para estancias menores a una semana es importante avisar con 3 días de
           anticipación, de caso contario será sancionado.
         </p>
@@ -314,7 +306,7 @@
 
       <div class="h-auto w-full">
         <h4 class="mb-2 text-lg font-bold">Métodos de pago</h4>
-        <p class="mb-6 font-medium text-slate-400">
+        <p class="mb-6 font-medium text-slate-400 dark:text-white">
           Aceptamos distintos métodos de pago: VISA, MasterCard, American
           Express, Paypal y Binance.
         </p>
@@ -322,21 +314,21 @@
 
       <div class="h-auto w-full">
         <h4 class="mb-2 text-lg font-bold">Mascotas</h4>
-        <p class="mb-6 font-medium text-slate-400">
+        <p class="mb-6 font-medium text-slate-400 dark:text-white">
           El tema de las mascotas dependerá directamente del anfitrión.
         </p>
       </div>
 
       <div class="h-auto w-full">
         <h4 class="mb-2 text-lg font-bold">Información de Seguridad</h4>
-        <p class="mb-6 font-medium text-slate-400">
+        <p class="mb-6 font-medium text-slate-400 dark:text-white">
           Todas nuestras estancias cuentan con seguro en caso de accidentes.
         </p>
       </div>
 
       <div class="h-auto w-full">
         <h4 class="mb-2 text-lg font-bold">Estancias Largas</h4>
-        <p class="mb-6 font-medium text-slate-400">
+        <p class="mb-6 font-medium text-slate-400 dark:text-white">
           Contamos con estancias de hasta 3 meses, en este caso es requerido un
           anticipo con un monto del 50% del valor de la renta.
         </p>
@@ -344,7 +336,7 @@
     </div>
 
     <!-- footer -->
-    <footer id="acerca" class="h-[200px] w-full bg-violet-600 p-4 text-white">
+    <footer id="acerca" class="h-[200px] w-full bg-slate-900 p-4 text-white">
       <h3 class="mb-5 text-left text-xl font-bold">Acerca de</h3>
       <ul class="flex flex-row flex-wrap space-x-3">
         <li class="text-faq">Inversionistas</li>
@@ -413,16 +405,19 @@
             viewBox="0 0 24 24"
             fill="currentColor"
             class="h-6 w-6 text-white"
+            id="iconDarkModeSm"
           >
             <path
               fill-rule="evenodd"
-              d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+              d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
               clip-rule="evenodd"
             />
           </svg>
-          <a href="" class="text-white">Perfil</a>
+          <a href="" class="text-white">Dark</a>
         </li>
       </ul>
     </nav>
+
+    <script src="../js/darMode.js"></script>
   </body>
 </html>
